@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E53518C2-230A-458E-A1FD-7266DC4A9FFC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>pa4</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="maxsubsums.cpp" />
+    <ClCompile Include="testdriver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="maxsubsums.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input_1024_0.txt" />
+    <Text Include="input_1024_1.txt" />
+    <Text Include="input_1024_2.txt" />
+    <Text Include="input_1024_3.txt" />
+    <Text Include="input_1024_4.txt" />
+    <Text Include="input_1024_5.txt" />
+    <Text Include="input_1024_6.txt" />
+    <Text Include="input_1024_7.txt" />
+    <Text Include="input_1024_8.txt" />
+    <Text Include="input_1024_9.txt" />
+    <Text Include="input_128_0.txt" />
+    <Text Include="input_128_1.txt" />
+    <Text Include="input_128_2.txt" />
+    <Text Include="input_128_3.txt" />
+    <Text Include="input_128_4.txt" />
+    <Text Include="input_128_5.txt" />
+    <Text Include="input_128_6.txt" />
+    <Text Include="input_128_7.txt" />
+    <Text Include="input_128_8.txt" />
+    <Text Include="input_128_9.txt" />
+    <Text Include="input_16_0.txt" />
+    <Text Include="input_16_1.txt" />
+    <Text Include="input_16_2.txt" />
+    <Text Include="input_16_3.txt" />
+    <Text Include="input_16_4.txt" />
+    <Text Include="input_16_5.txt" />
+    <Text Include="input_16_6.txt" />
+    <Text Include="input_16_7.txt" />
+    <Text Include="input_16_8.txt" />
+    <Text Include="input_16_9.txt" />
+    <Text Include="input_2048_0.txt" />
+    <Text Include="input_2048_1.txt" />
+    <Text Include="input_2048_2.txt" />
+    <Text Include="input_2048_3.txt" />
+    <Text Include="input_2048_4.txt" />
+    <Text Include="input_2048_5.txt" />
+    <Text Include="input_2048_6.txt" />
+    <Text Include="input_2048_7.txt" />
+    <Text Include="input_2048_8.txt" />
+    <Text Include="input_2048_9.txt" />
+    <Text Include="input_256_0.txt" />
+    <Text Include="input_256_1.txt" />
+    <Text Include="input_256_2.txt" />
+    <Text Include="input_256_3.txt" />
+    <Text Include="input_256_4.txt" />
+    <Text Include="input_256_5.txt" />
+    <Text Include="input_256_6.txt" />
+    <Text Include="input_256_7.txt" />
+    <Text Include="input_256_8.txt" />
+    <Text Include="input_256_9.txt" />
+    <Text Include="input_32_0.txt" />
+    <Text Include="input_32_1.txt" />
+    <Text Include="input_32_2.txt" />
+    <Text Include="input_32_3.txt" />
+    <Text Include="input_32_4.txt" />
+    <Text Include="input_32_5.txt" />
+    <Text Include="input_32_6.txt" />
+    <Text Include="input_32_7.txt" />
+    <Text Include="input_32_8.txt" />
+    <Text Include="input_32_9.txt" />
+    <Text Include="input_4096_0.txt" />
+    <Text Include="input_4096_1.txt" />
+    <Text Include="input_4096_2.txt" />
+    <Text Include="input_4096_3.txt" />
+    <Text Include="input_4096_4.txt" />
+    <Text Include="input_4096_5.txt" />
+    <Text Include="input_4096_6.txt" />
+    <Text Include="input_4096_7.txt" />
+    <Text Include="input_4096_8.txt" />
+    <Text Include="input_4096_9.txt" />
+    <Text Include="input_512_0.txt" />
+    <Text Include="input_512_1.txt" />
+    <Text Include="input_512_2.txt" />
+    <Text Include="input_512_3.txt" />
+    <Text Include="input_512_4.txt" />
+    <Text Include="input_512_5.txt" />
+    <Text Include="input_512_6.txt" />
+    <Text Include="input_512_7.txt" />
+    <Text Include="input_512_8.txt" />
+    <Text Include="input_512_9.txt" />
+    <Text Include="input_64_0.txt" />
+    <Text Include="input_64_1.txt" />
+    <Text Include="input_64_2.txt" />
+    <Text Include="input_64_3.txt" />
+    <Text Include="input_64_4.txt" />
+    <Text Include="input_64_5.txt" />
+    <Text Include="input_64_6.txt" />
+    <Text Include="input_64_7.txt" />
+    <Text Include="input_64_8.txt" />
+    <Text Include="input_64_9.txt" />
+    <Text Include="input_8192_0.txt" />
+    <Text Include="input_8192_1.txt" />
+    <Text Include="input_8192_2.txt" />
+    <Text Include="input_8192_3.txt" />
+    <Text Include="input_8192_4.txt" />
+    <Text Include="input_8192_5.txt" />
+    <Text Include="input_8192_6.txt" />
+    <Text Include="input_8192_7.txt" />
+    <Text Include="input_8192_8.txt" />
+    <Text Include="input_8192_9.txt" />
+    <Text Include="input_8_0.txt" />
+    <Text Include="input_8_1.txt" />
+    <Text Include="input_8_2.txt" />
+    <Text Include="input_8_3.txt" />
+    <Text Include="input_8_4.txt" />
+    <Text Include="input_8_5.txt" />
+    <Text Include="input_8_6.txt" />
+    <Text Include="input_8_7.txt" />
+    <Text Include="input_8_8.txt" />
+    <Text Include="input_8_9.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

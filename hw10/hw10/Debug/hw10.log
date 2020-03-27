@@ -1,0 +1,71 @@
+﻿  Test.cpp
+d:\nolen\documents\computer science\cpts_223\hw10\hw10\quadraticprobing.h(60): warning C4018: '>': signed/unsigned mismatch
+  d:\nolen\documents\computer science\cpts_223\hw10\hw10\quadraticprobing.h(45): note: while compiling class template member function 'int QuadraticHashTable<std::string>::insert(const HashedObj &)'
+          with
+          [
+              HashedObj=std::string
+          ]
+  d:\nolen\documents\computer science\cpts_223\hw10\hw10\test.cpp(44): note: see reference to function template instantiation 'int QuadraticHashTable<std::string>::insert(const HashedObj &)' being compiled
+          with
+          [
+              HashedObj=std::string
+          ]
+  d:\nolen\documents\computer science\cpts_223\hw10\hw10\test.cpp(41): note: see reference to class template instantiation 'QuadraticHashTable<std::string>' being compiled
+d:\nolen\documents\computer science\cpts_223\hw10\hw10\linearprobing.h(60): warning C4018: '>': signed/unsigned mismatch
+  d:\nolen\documents\computer science\cpts_223\hw10\hw10\linearprobing.h(45): note: while compiling class template member function 'int LinearHashTable<std::string>::insert(const HashedObj &)'
+          with
+          [
+              HashedObj=std::string
+          ]
+  d:\nolen\documents\computer science\cpts_223\hw10\hw10\test.cpp(33): note: see reference to function template instantiation 'int LinearHashTable<std::string>::insert(const HashedObj &)' being compiled
+          with
+          [
+              HashedObj=std::string
+          ]
+  d:\nolen\documents\computer science\cpts_223\hw10\hw10\test.cpp(30): note: see reference to class template instantiation 'LinearHashTable<std::string>' being compiled
+d:\nolen\documents\computer science\cpts_223\hw10\hw10\quadraticprobing.h(126): warning C4018: '>=': signed/unsigned mismatch
+  d:\nolen\documents\computer science\cpts_223\hw10\hw10\quadraticprobing.h(117): note: while compiling class template member function 'int QuadraticHashTable<std::string>::findPos(const HashedObj &) const'
+          with
+          [
+              HashedObj=std::string
+          ]
+  d:\nolen\documents\computer science\cpts_223\hw10\hw10\quadraticprobing.h(34): note: see reference to function template instantiation 'int QuadraticHashTable<std::string>::findPos(const HashedObj &) const' being compiled
+          with
+          [
+              HashedObj=std::string
+          ]
+d:\nolen\documents\computer science\cpts_223\hw10\hw10\quadraticprobing.h(110): warning C4018: '>=': signed/unsigned mismatch
+  d:\nolen\documents\computer science\cpts_223\hw10\hw10\quadraticprobing.h(100): note: while compiling class template member function 'int QuadraticHashTable<std::string>::findPos(const HashedObj &,int *) const'
+          with
+          [
+              HashedObj=std::string
+          ]
+  d:\nolen\documents\computer science\cpts_223\hw10\hw10\quadraticprobing.h(49): note: see reference to function template instantiation 'int QuadraticHashTable<std::string>::findPos(const HashedObj &,int *) const' being compiled
+          with
+          [
+              HashedObj=std::string
+          ]
+d:\nolen\documents\computer science\cpts_223\hw10\hw10\linearprobing.h(124): warning C4018: '>=': signed/unsigned mismatch
+  d:\nolen\documents\computer science\cpts_223\hw10\hw10\linearprobing.h(116): note: while compiling class template member function 'int LinearHashTable<std::string>::findPos(const HashedObj &) const'
+          with
+          [
+              HashedObj=std::string
+          ]
+  d:\nolen\documents\computer science\cpts_223\hw10\hw10\linearprobing.h(34): note: see reference to function template instantiation 'int LinearHashTable<std::string>::findPos(const HashedObj &) const' being compiled
+          with
+          [
+              HashedObj=std::string
+          ]
+d:\nolen\documents\computer science\cpts_223\hw10\hw10\linearprobing.h(109): warning C4018: '>=': signed/unsigned mismatch
+  d:\nolen\documents\computer science\cpts_223\hw10\hw10\linearprobing.h(100): note: while compiling class template member function 'int LinearHashTable<std::string>::findPos(const HashedObj &,int *) const'
+          with
+          [
+              HashedObj=std::string
+          ]
+  d:\nolen\documents\computer science\cpts_223\hw10\hw10\linearprobing.h(49): note: see reference to function template instantiation 'int LinearHashTable<std::string>::findPos(const HashedObj &,int *) const' being compiled
+          with
+          [
+              HashedObj=std::string
+          ]
+  hw10.vcxproj -> D:\Nolen\Documents\Computer Science\cpts_223\hw10\Debug\hw10.exe
+  hw10.vcxproj -> D:\Nolen\Documents\Computer Science\cpts_223\hw10\Debug\hw10.pdb (Full PDB)
